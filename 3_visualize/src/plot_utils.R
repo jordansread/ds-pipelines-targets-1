@@ -1,5 +1,4 @@
 
-library(dplyr)
 plot_results <- function(eval_data, fileout = "3_visualize/out/figure_1.png"){
   
   # Create a plot
@@ -44,4 +43,5 @@ plot_results <- function(eval_data, fileout = "3_visualize/out/figure_1.png"){
   text(2.3, 1.1, 'Process-Based', pos = 4, cex = 1.1)
   
   dev.off()
+  return(fileout)
 }
