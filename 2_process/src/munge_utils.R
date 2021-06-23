@@ -1,8 +1,5 @@
 
 
-library(dplyr)
-library(stringr)
-
 munge_datafile <- function(file_in){
   # Prepare the data for plotting
   readr::read_csv(file_in, col_types = 'iccd') %>%
